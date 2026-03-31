@@ -1,6 +1,6 @@
 [build-system]
 requires = ["setuptools>=68.0", "wheel"]
-build-backend = "setuptools.backends._legacy:_Backend"
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "code-robin"
@@ -16,7 +16,6 @@ keywords = ["architecture", "analyzer", "python", "cli", "documentation"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
@@ -30,6 +29,9 @@ dependencies = [
     "httpx>=0.27.0",
     "python-dotenv>=1.0.0",
 ]
+
+[tool.setuptools.packages.find]
+include = ["src*"]
 
 [project.optional-dependencies]
 bedrock = ["boto3>=1.35.0"]
