@@ -372,6 +372,19 @@ MIT
 
 ---
 
+## 免责声明
+
+本项目基于公开泄漏的 Claude Code 源码进行学习研究与架构分析，仅供教育和技术交流目的。
+
+- 本项目**不声明**对 Claude Code 原始源码的任何所有权
+- 本项目与 [Anthropic](https://www.anthropic.com/) **没有任何关联**，未获得其赞助、认可或授权
+- Claude Code 的所有权利归 Anthropic 所有
+- 如有侵权，请联系删除
+
+> This project is based on publicly leaked Claude Code source code for educational and architectural analysis purposes only. It is not affiliated with, endorsed by, or maintained by Anthropic. All rights to Claude Code belong to Anthropic.
+
+---
+
 ## 作者
 
 ![](https://fisherai-1312281807.cos.ap-guangzhou.myqcloud.com/6df7dfc5e5e5ea9267ed62795a992e4d.bmp)
