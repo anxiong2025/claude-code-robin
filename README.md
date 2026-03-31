@@ -4,6 +4,8 @@
 
 A Python project architecture analyzer and documentation generator with built-in Claude AI conversation support.
 
+## [Claude Code 核心代码泄漏详细剖析 — 完整架构深度解析（中英双语）](./ARCHITECTURE.md)
+
 ## Features
 
 - **Project Scanning** — Recursively scan Python projects, count files/lines, discover modules
