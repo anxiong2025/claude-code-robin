@@ -27,6 +27,7 @@ Thumbs.db
 # Sensitive files
 .env
 .env.*
+!.env.example
 *.pem
 *.key
 credentials.*
