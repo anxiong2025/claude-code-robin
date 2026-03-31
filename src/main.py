@@ -28,7 +28,7 @@ Any other input will be sent to the current LLM as a conversation.
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        prog='claude-code-robin',
+        prog='code-robin',
         description='Read your codebase like Robin reads Poneglyphs — Python project architecture analyzer',
     )
     subparsers = parser.add_subparsers(dest='command', required=True)
@@ -116,7 +116,7 @@ def print_providers() -> None:
         has_key = bool(os.environ.get(p.env_key))
         status = '\033[32m✓\033[0m' if has_key else '\033[90m✗\033[0m'
         print(f'  {status}  {p.name:<12} {p.label_zh:<24} model: {p.default_model}')
-    print(f'\n  Run `claude-code-robin configure` to add API keys.')
+    print(f'\n  Run `code-robin configure` to add API keys.')
     print(f'  Use `model <name>` in interactive mode to switch.\n')
 
 
@@ -155,7 +155,7 @@ def interactive(provider_name: str | None = None, model_id: str | None = None, a
         provider = detect_provider()
     if not provider:
         if not api_key:
-            print('No API key configured. Run `claude-code-robin configure` first,')
+            print('No API key configured. Run `code-robin configure` first,')
             print('or pass --provider and --key directly.')
             return 1
         # Default to openrouter if key provided without provider
@@ -167,7 +167,7 @@ def interactive(provider_name: str | None = None, model_id: str | None = None, a
 
     model_id = model_id or provider.default_model
 
-    print('claude-code-robin — Interactive Mode')
+    print('code-robin — Interactive Mode')
     print('Read your codebase like Robin reads Poneglyphs.')
     print(f'Current: {provider.label_zh} ({provider.name}, model: {model_id})')
     print('Type "help" for commands, "models" to list providers, "exit" to quit.\n')

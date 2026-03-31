@@ -73,7 +73,7 @@ def chat_completion(messages: list[dict], provider: ProviderConfig, model: str |
     if not api_key:
         raise RuntimeError(
             f'API key not set for {provider.label_zh}. '
-            f'Run `claude-code-robin configure` or set {provider.env_key}.'
+            f'Run `code-robin configure` or set {provider.env_key}.'
         )
 
     if provider.name == 'anthropic':

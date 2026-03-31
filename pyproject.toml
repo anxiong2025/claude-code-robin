@@ -3,7 +3,7 @@ requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.backends._legacy:_Backend"
 
 [project]
-name = "claude-code-robin"
+name = "code-robin"
 version = "0.1.0"
 description = "Read your codebase like Robin reads Poneglyphs — Python project architecture analyzer"
 readme = "README.md"
@@ -36,9 +36,9 @@ bedrock = ["boto3>=1.35.0"]
 dev = ["pytest>=8.0"]
 
 [project.scripts]
-claude-code-robin = "src.main:main"
+code-robin = "src.main:main"
 
 [project.urls]
-Homepage = "https://github.com/anxiong2025/claude-code-robin"
-Repository = "https://github.com/anxiong2025/claude-code-robin"
-Issues = "https://github.com/anxiong2025/claude-code-robin/issues"
+Homepage = "https://github.com/anxiong2025/code-robin"
+Repository = "https://github.com/anxiong2025/code-robin"
+Issues = "https://github.com/anxiong2025/code-robin/issues"

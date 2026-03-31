@@ -1,4 +1,4 @@
-"""claude-code-robin — Read your codebase like Robin reads Poneglyphs."""
+"""code-robin — Read your codebase like Robin reads Poneglyphs."""
 
 from .models import ArchReport, Dependency, Module, ProjectManifest, ProjectStats
 from .reporter import Reporter
